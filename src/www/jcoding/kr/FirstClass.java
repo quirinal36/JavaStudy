@@ -1,4 +1,4 @@
-package lee.hyoung.gu;
+package www.jcoding.kr;
 
 public class FirstClass {
 
