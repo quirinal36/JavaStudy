@@ -5,7 +5,11 @@ public class Practice implements MethodInterface{
 	@Override
 	public int sum(int[] arr) {
 		// TODO arr 안의 모든 값들의 합계를 계산해 return 한다.
-		return 0;
+		int sum = 0;
+		for(int n : arr) {
+			sum += n;
+		}
+		return sum;
 	}
 
 	@Override
@@ -43,5 +47,14 @@ public class Practice implements MethodInterface{
 		// TODO input 의 start 번째 글자부터 num 개의 글자를 return 한다.
 		return null;
 	}
-
+	
+	public static void main(String[] args) {
+		Practice p = new Practice();
+		
+		int[] data = {50, 60, 70, 80, 90};
+		String phoneNum = "010-5679-0072";
+		
+		int sumResult = p.sum(data);
+		System.out.println("합계: " + sumResult);
+	}
 }
