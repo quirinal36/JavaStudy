@@ -11,7 +11,7 @@ public class Solution71 {
 	
 	public int func_a(int num) {
 		int sum = 0;
-		
+		// sum : 1 부터 num 까지의 합계 
 		return sum;
 	}
 	
