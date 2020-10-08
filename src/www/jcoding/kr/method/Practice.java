@@ -37,7 +37,7 @@ public class Practice implements MethodInterface{
 	}
 
 	@Override
-	public String rignt(String input, int num) {
+	public String right(String input, int num) {
 		// TODO input 의 마지막 글자 부터 num 개의 글자를 return 한다.
 		return null;
 	}
@@ -56,5 +56,20 @@ public class Practice implements MethodInterface{
 		
 		int sumResult = p.sum(data);
 		System.out.println("합계: " + sumResult);
+		
+		double avg = p.average(data);
+		System.out.println("평균: " + avg);
+		
+		System.out.println("최댓값: " + p.max(data));
+		System.out.println("최소값: " + p.min(data));
+		
+		String phone01 = p.left(phoneNum, 3);
+		System.out.println("처음 세글자: " + phone01);
+		
+		String phone02 = p.mid(phoneNum, 5, 4);
+		System.out.println("가운데 네글자: " + phone02);
+		
+		String phone03 = p.right(phoneNum, 4);
+		System.out.println("마지막 네글자: " + phone03);
 	}
 }

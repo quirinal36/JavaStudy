@@ -7,6 +7,6 @@ public interface MethodInterface {
 	public int min(int[] arr);
 	
 	public String left(String input, int num);
-	public String rignt(String input, int num);
+	public String right(String input, int num);
 	public String mid(String input, int start, int num);
 }
