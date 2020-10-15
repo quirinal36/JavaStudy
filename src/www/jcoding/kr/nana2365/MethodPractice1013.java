@@ -48,7 +48,7 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public void countDown(int count) {
 		// TODO: ? 에 알맞은 숫자 또는 변수를 입력해 함수를 완성 해주세요.
-		for(int i = ?; i>=0 ; i--) {
+		for(int i = count; i>=0 ; i--) {
 			System.out.println(i);
 		}
 	}
@@ -70,6 +70,9 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 //			예를들어 숫자가 100 이라면 0 ~ 99 까지의 범위 내에서 랜덤 숫자를 만든다.
 			array[--number] = random.nextInt(100) + 1;
 			
+			//number = number - 1;
+			//array[number]= random.nextInt(100)+1 과 같다.
+			
 //			System.out.println("number: " + number);
 //			System.out.println("array["+number+"] : " + array[number]);
 		}
@@ -88,7 +91,13 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public int[] getInputMakeRandomArray(int number) {
 		// TODO for문을 활용하여 getInputMakeArray 과 같은 역할을 하는 함수를 만들어 봅니다.
-		return null;
+		Random random = new Random();
+		int[] array = new int[number];
+		for(int i = 0; i < number; i++) {
+			array[i] = random.nextInt(100) + 1;
+		}
+		
+		return array;
 	}
 
 	/**
@@ -104,8 +113,18 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public int countFilteredData(int []data, int start, int end) {
 		// TODO 배열에서 ~이상 ~이하의 값이 몇개 있는지 세는 함수를 완성 해주세요.
+		int max=0;
 		int count = 0;
+		// 1. 배열의 0번째~맞지막까지 반복문을 통해 검사
+		for(int i : data) {
+			if(data[i]> max) {
+				max = data[i];
+			}
+			
+		}
+		//~이상 ~이하 일때만 조건문 count를 증가
 		
+
 		return count;
 	}
 	
