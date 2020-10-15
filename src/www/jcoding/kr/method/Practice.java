@@ -15,19 +15,41 @@ public class Practice implements MethodInterface{
 	@Override
 	public double average(int[] arr) {
 		// TODO arr 안의 모든 값들의 평균을 계산해 return 한다.
-		return 0;
+		int sum = 0;
+		for (int n : arr) {
+			sum += n;
+		}
+		double avg = sum / (arr.length);
+		return avg;
 	}
 
 	@Override
 	public int max(int[] arr) {
 		// TODO arr 안의 모든 값들 중 가장 큰 값을 찾아 return 한다.
-		return 0;
+		int max = 0;
+		for (int i : arr) {
+			if (max < i) {
+				max = i;
+			}
+		}
+		return max;
 	}
 
 	@Override
 	public int min(int[] arr) {
 		// TODO arr 안의 모든 값들 중 가장 작은 값을 찾아 return 한다.
-		return 0;
+		int min = 0;
+		for (int i : arr) {
+			if (min < i) {
+				min = i;
+			}
+		}
+		for (int i : arr) {
+			if (min > i) {
+				min = i;
+			}
+		}
+		return min;
 	}
 
 	@Override
@@ -66,7 +88,7 @@ public class Practice implements MethodInterface{
 		String phone01 = p.left(phoneNum, 3);
 		System.out.println("처음 세글자: " + phone01);
 		
-		String phone02 = p.mid(phoneNum, 5, 4);
+		String phone02 = p.mid(phoneNum, 4, 4);
 		System.out.println("가운데 네글자: " + phone02);
 		
 		String phone03 = p.right(phoneNum, 4);
