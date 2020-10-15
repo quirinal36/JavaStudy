@@ -44,9 +44,10 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	 * count : 카운트다운이 시작되는 숫자
 	 */
 	@Override
-	public void countDown(int count) {
+	public void countDown(int num) {
 		// TODO: ? 에 알맞은 숫자 또는 변수를 입력해 함수를 완성 해주세요.
-		for(int i = ?; i>=0 ; i--) {
+		int i = 0;
+		for(i = 0; i>=num ; i--) {
 			System.out.println(i);
 		}
 	}
@@ -146,8 +147,8 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public void makePyramid(int level) {
 		// TODO : 아래 코드를 완성하여 위와같은 모양이 나오도록 메소드를 완성하세요.
-		for(int i=0; i?level; i++) {
-			for(int j=0; j?i; j++) {
+		for(int i=0; i<level; i++) {
+			for(int j=0; j<i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
