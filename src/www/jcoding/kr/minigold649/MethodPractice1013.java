@@ -5,6 +5,8 @@ import java.util.Random;
 
 import javax.swing.JOptionPane;
 
+import www.jcoding.kr.method2.MethodPracticeInterface;
+
 public class MethodPractice1013 implements MethodPracticeInterface{
 
 	/**
