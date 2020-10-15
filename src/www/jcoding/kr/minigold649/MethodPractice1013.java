@@ -48,7 +48,7 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public void countDown(int count) {
 		// TODO: ? 에 알맞은 숫자 또는 변수를 입력해 함수를 완성 해주세요.
-		for(int i = ?; i>=0 ; i--) {
+		for(int i = count; i>=0 ; i--) {
 			System.out.println(i);
 		}
 	}
@@ -88,7 +88,12 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public int[] getInputMakeRandomArray(int number) {
 		// TODO for문을 활용하여 getInputMakeArray 과 같은 역할을 하는 함수를 만들어 봅니다.
-		return null;
+		Random r = new Random();
+		int a[] = new int[number];
+		for (int i = 0 ; i < number ; i++) {
+			a[i] = r.nextInt(100) + 1;
+		}
+		return a;
 	}
 
 	/**
@@ -105,7 +110,11 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	public int countFilteredData(int []data, int start, int end) {
 		// TODO 배열에서 ~이상 ~이하의 값이 몇개 있는지 세는 함수를 완성 해주세요.
 		int count = 0;
-		
+		for (int i = 0 ; i < data.length ; i++) {
+			if (data[i] >= start && data[i] <= end) {
+				count = count + 1;
+			}
+		}
 		return count;
 	}
 	
