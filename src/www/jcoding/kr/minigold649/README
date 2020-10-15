@@ -1,0 +1,8 @@
+이은표 님의 작업폴더 입니다.
+
+작업 시작 전
+1. team -> fetch
+1-1. 만약 내려받을 파일이 있다면 team -> pull
+
+작업 완료 후
+2. team -> commit -> stage에 적업한 파일 옮기기 -> commit and push
