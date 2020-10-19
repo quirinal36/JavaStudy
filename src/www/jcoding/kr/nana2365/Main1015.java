@@ -61,6 +61,7 @@ public class Main1015 {
 		System.out.println(cnt + "개 입니다.");
 		
 	
+	
 		
 		
 		
