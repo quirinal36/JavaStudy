@@ -113,18 +113,15 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public int countFilteredData(int []data, int start, int end) {
 		// TODO 배열에서 ~이상 ~이하의 값이 몇개 있는지 세는 함수를 완성 해주세요.
-		int max=0;
+		
 		int count = 0;
-		// 1. 배열의 0번째~맞지막까지 반복문을 통해 검사
-		for(int i : data) {
-			if(data[i]> max) {
-				max = data[i];
+		// 1. 배열의 0번째~마지막까지 반복문을 통해 검사
+		for(int i=0; i<data.length; i++) {
+			if(data[i]>=start && data[i]<=end) {
+				count++;
 			}
-			
 		}
 		//~이상 ~이하 일때만 조건문 count를 증가
-		
-
 		return count;
 	}
 	
@@ -137,7 +134,11 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public int sumOfArray(int[] array) {
 		// TODO 반복문을 활용해 배열의 합계를 구합니다.
-		return 0;
+		int sum = 0;
+		for(int i=0; i<array.length; i++) {
+			sum=sum+array[i];
+		}
+		return result;
 	}
 
 	/**

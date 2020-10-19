@@ -9,20 +9,21 @@ public class Main1015 {
 		// TODO Auto-generated method stub
 		MethodPractice1013 mp = new MethodPractice1013(); //생성자. 함수와 달리 new가 붙는다
 		
-		mp.printString("자바재밌다", 5);
+		/* mp.printString("자바재밌다", 5);
 		
 		mp.printNumbers(10, false);
 	
 		//실습1
 		mp.countDown(10); //함수호출
 		
-		/* 
-		Scanner sc = new Scanner(System.in);
-		int number = sc.nextInt();
-		mp.countDown(number);
 		
-		sc.close();  와 같다*/
-
+				/*   Scanner sc = new Scanner(System.in);
+				   	 int number = sc.nextInt();
+					 mp.countDown(number);
+					
+					 sc.close();  와 같다 */ 
+		
+		
 		System.out.println("실습2 While문 시작. 숫자 입력");
 
 		
@@ -46,6 +47,8 @@ public class Main1015 {
 		result = mp.getInputMakeRandomArray(number);
 		System.out.println(Arrays.toString(result));
 		
+		System.out.println("실습3 시작"); 
+		
 		//실습 3
 		//1. start 값을 입력 받는다.
 		int start = sc.nextInt();
@@ -56,6 +59,10 @@ public class Main1015 {
 		//3. result 배열안에 start 이상 end 이하의 값이 몇개 인지 알려주는 함수를 실행한다.
 		int cnt = mp.countFilteredData(result, start, end);
 		System.out.println(cnt + "개 입니다.");
+		
+		
+		
+		
 		
 		
 		sc.close();
