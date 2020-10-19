@@ -9,6 +9,8 @@ import www.jcoding.kr.method2.MethodPracticeInterface;
 
 public class MethodPractice1013 implements MethodPracticeInterface{
 
+	private static final int array = 0;
+
 	/**
 	 * "자바 재밌다"가 몇 번 출력될까요?
 	 * 
@@ -90,7 +92,7 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 		// TODO for문을 활용하여 getInputMakeArray 과 같은 역할을 하는 함수를 만들어 봅니다.
 		Random random = new Random();
 		int[] array = new int[number];
-		for(number = number; array.length < 0; array[--number] = random.nextInt(100)+1) {
+		for(number = 0; array.length < 0; array[--number] = random.nextInt(100)+1) {
 		}
 		return array;
 	}
@@ -105,10 +107,19 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	 * @param end
 	 * @return 정수
 	 */
+	
 	@Override
 	public int countFilteredData(int []data, int start, int end) {
-		// TODO 배열에서 ~이상 ~이하의 값이 몇개 있는지 세는 함수를 완성 해주세요.		
+		// TODO 배열에서 ~이상 ~이하의 값이 몇개 있는지 세는 함수를 완성 해주세요.
 		int count = 0;
+		int num = 9;
+		int result[] = {10,20,30,40,50,60,70,80,90};
+		for(count = 0; result.length < 0; num--) {
+			if((result[num] > start)&&(result[num] < end)) {
+				count = count + 1;
+			}
+		}
+		System.out.println(count);
 		
 		return count;
 	}
@@ -152,7 +163,7 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public void makePyramid(int level) {
 		// TODO : 아래 코드를 완성하여 위와같은 모양이 나오도록 메소드를 완성하세요.
-		for(int i=0; i<level; i++) {
+		for(int i=1; i<level; i++) {
 			for(int j=0; j<i; j++) {
 				System.out.print("*");
 			}
@@ -169,6 +180,11 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public void guguDan(int number) {
 		// TODO number에 해당하는 구구단을 출력하는 함수를 완성하세요.
+		int gugu = number;
+		for(int gu = 1 ; gu < 10 ; ++gu) {
+			gugu = number * gu;
+			System.out.println(gugu);
+		}
 		
 	}
 
