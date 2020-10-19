@@ -138,7 +138,7 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 		for(int i=0; i<array.length; i++) {
 			sum=sum+array[i];
 		}
-		return result;
+		return sum;
 	}
 
 	/**

@@ -60,10 +60,15 @@ public class Main1015 {
 		int cnt = mp.countFilteredData(result, start, end);
 		System.out.println(cnt + "개 입니다.");
 		
+		//실습4
 		System.out.println("실습4 시작"); 
+		System.out.println("숫자 입력"); 
 		
+		number = sc.nextInt();
+		int[] array = new int[number];
 		
-		
+		mp.sumOfArray(array);
+		System.out.println(result);
 		
 		
 		sc.close();
