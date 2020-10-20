@@ -6,7 +6,9 @@ import java.util.*;
 public class Solution01 {
 	public int[] solution(int[] input) {
 		int[] result = new int[input.length - 1];
-		
+		for(int i = 0;i<result.length;i++) {
+			result[i] = input[i] - input[i +1];
+		}
 		return result;
 	}
 	
