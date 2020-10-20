@@ -65,7 +65,9 @@ public class Main1015 {
 		System.out.println("실습4 시작"); 
 		
 		//배열을 하나 생성		
-		int[] array = {10, 20, 30, 40, 50};
+		
+		int number = 10;
+		int[] array = mp.getInputMakeArray(number);
 		
 		int arrSum = mp.sumOfArray(array);
 		System.out.println(arrSum);
