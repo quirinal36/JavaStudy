@@ -4,9 +4,12 @@ import javax.swing.JOptionPane;
 import java.util.*;
 
 public class Solution01 {
+	
 	public int[] solution(int[] input) {
 		int[] result = new int[input.length - 1];
-		
+		for (int i = 0 ; i < input.length - 1 ; i++) {
+			result[i] = input[i] - input[i + 1];
+		}
 		return result;
 	}
 	
@@ -17,7 +20,7 @@ public class Solution01 {
 		int arr[] = new int[number];
 		
 		Scanner sc = new Scanner(System.in);
-		int i=0;
+		int i = 0;
 		while(number > 0) {
 			number--;
 			System.out.print("please input>>");
