@@ -1,43 +1,28 @@
 package www.jcoding.kr.nana2365;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main1020 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		MethodPractice1013 mp = new MethodPractice1013();
-		
-		
 
-				//실습 4
-				
-				System.out.println("실습4 시작"); 
-						
-				//배열을 하나 생성		
-				int[] array0 = {10, 20, 30, 40, 50};
-				
-				int arrSum = mp.sumOfArray(array0);
-				System.out.println(arrSum);
+		//객체를 생성한다 : Solution01 이라는 클래스 내부에 들어있는 함수를 불러서 쓸 수 있도록 객체 생성
+		Solution01 s01 =  new Solution01();
 		
-				//실습 5
-				double arrAvg = mp.averageOfArray(array0);
-				System.out.println(arrAvg);
-				
-				
-				//실습6
-				Scanner sc = new Scanner(System.in);
-				System.out.println("숫자입력");				
-				int level = sc.nextInt();
-				
-				mp.makePyramid(level);
+		//사용자에게 배열을 직접 입력 받는다.
+		int array[] = s01.getInput();
 		
-				//실습 7
-				
-
+		//인접한 두 숫자의 차를 계산하여 결과값을 리턴한다.
+		int result[] = s01.solution(array);
+		
+		//결과값을 화면에 출력한다.
+		System.out.println(Arrays.toString(result));
 		
 		
-		sc.close();
+		
+		
+		
+		
 		
 	}
 
