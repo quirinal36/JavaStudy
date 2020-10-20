@@ -23,7 +23,8 @@ public class Solution01 {
 		int i = 0;
 		while(number > 0) {
 			number--;
-			System.out.print("please input>>");
+			System.out.println((i + 1) + "번째 숫자");
+			System.out.print("-> ");
 			int inputNum = sc.nextInt();
 			arr[i++] = inputNum;
 		}
