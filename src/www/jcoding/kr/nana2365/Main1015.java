@@ -24,6 +24,7 @@ public class Main1015 {
 					 sc.close();  와 같다 */ 
 		
 		
+		/*
 		System.out.println("실습2 While문 시작. 숫자 입력");
 
 		
@@ -58,20 +59,19 @@ public class Main1015 {
 		
 		//3. result 배열안에 start 이상 end 이하의 값이 몇개 인지 알려주는 함수를 실행한다.
 		int cnt = mp.countFilteredData(result, start, end);
-		System.out.println(cnt + "개 입니다.");
+		System.out.println(cnt + "개 입니다."); */
 		
 		//실습4
 		System.out.println("실습4 시작"); 
-		System.out.println("숫자 입력"); 
 		
-		number = sc.nextInt();
-		int[] array = new int[number];
+		//배열을 하나 생성		
+		int[] array = {10, 20, 30, 40, 50};
 		
-		mp.sumOfArray(array);
-		System.out.println(result);
+		int arrSum = mp.sumOfArray(array);
+		System.out.println(arrSum);
 		
 		
-		sc.close();
+	
 
 	}
 
