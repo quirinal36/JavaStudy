@@ -127,7 +127,11 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public int sumOfArray(int[] array) {
 		// TODO 반복문을 활용해 배열의 합계를 구합니다.
-		return 0;
+		int sum = 0;
+		for (int i = 0 ; i < array.length ; i++) {
+			sum = sum + array[i];
+		}
+		return sum;
 	}
 
 	/**
@@ -137,9 +141,9 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	 * @return 배열의 평균
 	 */
 	@Override
-	public double averageOfArray(int[] array) {
+	public double averageOfArray(int[] array2) {
 		// TODO sumOfArray 함수를 활용해 평균을 구합니다.
-		return ? / (double)array.length;
+		return sumOfArray(array2) / (double)array2.length;
 	}
 
 	/**
@@ -157,8 +161,8 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public void makePyramid(int level) {
 		// TODO : 아래 코드를 완성하여 위와같은 모양이 나오도록 메소드를 완성하세요.
-		for(int i=0; i?level; i++) {
-			for(int j=0; j?i; j++) {
+		for(int i = 0 ; i < level ; i++) {
+			for(int j = 0 ; j <= i ; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
@@ -174,7 +178,9 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public void guguDan(int number) {
 		// TODO number에 해당하는 구구단을 출력하는 함수를 완성하세요.
-		
+		for (int i = 1 ; i <= 9 ; i++) {
+			System.out.println(number + " X " + i + " = " + number * i);
+		}
 	}
 
 	/**
@@ -195,5 +201,12 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public void filterData(int[] array, int cutLine) {
 		// TODO: 함수를 완성 해주세요.
+		for (int i = 0 ; i < array.length ; i++) {
+			if (array[i] >= cutLine) {
+				System.out.println("(" + array[i] + ")");
+			} else {
+				System.out.println(array[i]);
+			}
+		}
 	}
 }
