@@ -1,4 +1,4 @@
-package www.jcoding.kr.minigold649;
+package www.jcoding.kr.minigold649.cos3;
 
 public class Solution73 {
 	public int solution(int[] arr) {

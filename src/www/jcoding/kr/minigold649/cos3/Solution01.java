@@ -1,4 +1,4 @@
-package www.jcoding.kr.minigold649;
+package www.jcoding.kr.minigold649.cos3;
 
 import javax.swing.JOptionPane;
 import java.util.*;

@@ -1,4 +1,4 @@
-package www.jcoding.kr.minigold649;
+package www.jcoding.kr.minigold649.cos3;
 
 public class Solution74 {
 	public int[] solution(int[] input) {
