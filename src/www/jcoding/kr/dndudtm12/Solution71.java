@@ -12,6 +12,9 @@ public class Solution71 {
 	public int func_a(int num) {
 		int sum = 0;
 		// sum : 1 부터 num 까지의 합계 
+		for(int i = 0; num >= i; i++) {
+			sum += i;
+		}
 		return sum;
 	}
 	
