@@ -1,4 +1,4 @@
-package www.jcoding.kr.minigold649.cos3;
+package www.jcoding.kr.minigold649;
 
 import java.util.Scanner;
 
