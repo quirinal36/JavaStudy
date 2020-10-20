@@ -112,14 +112,11 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	public int countFilteredData(int []data, int start, int end) {
 		// TODO 배열에서 ~이상 ~이하의 값이 몇개 있는지 세는 함수를 완성 해주세요.
 		int count = 0;
-		int num = 9;
-		int result[] = {10,20,30,40,50,60,70,80,90};
-		for(count = 0; result.length < 0; num--) {
-			if((result[num] > start)&&(result[num] < end)) {
+		for(int i = 0 ;i < data.length;i++) {
+			if(data[i] > start&& data[i] < end) {
 				count = count + 1;
 			}
 		}
-		System.out.println(count);
 		
 		return count;
 	}
@@ -133,7 +130,11 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public int sumOfArray(int[] array) {
 		// TODO 반복문을 활용해 배열의 합계를 구합니다.
-		return 0;
+		int sum = 0;
+		for(int n : array) {
+			sum += n;
+		}
+		return sum;
 	}
 
 	/**
@@ -145,7 +146,8 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public double averageOfArray(int[] array) {
 		// TODO sumOfArray 함수를 활용해 평균을 구합니다.
-		return ? / (double)array.length;
+		
+		return sumOfArray(array) / (double)array.length;
 	}
 
 	/**
@@ -206,5 +208,14 @@ public class MethodPractice1013 implements MethodPracticeInterface{
 	@Override
 	public void filterData(int[] array, int cutLine) {
 		// TODO: 함수를 완성 해주세요.
+		for(int i = 0;i < array.length; i++) {
+			if(array[i] > cutLine) {
+
+				System.out.println("("+array[i]+")");
+			}
+			if(array[i] < cutLine) {
+			System.out.println(array[i]);
+			}
+		}
 	}
 }

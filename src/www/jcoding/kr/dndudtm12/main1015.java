@@ -45,6 +45,24 @@ public class main1015 {
 		
 		mp.countFilteredData(result, start, end);
 		
+		mp.sumOfArray(result);
+		
+		int sum = mp.sumOfArray(result);
+		
+		System.out.println(sum);
+		
+		mp.averageOfArray(result);
+		
+		double avg = mp.averageOfArray(result);
+		
+		System.out.println(avg);
+		
+		System.out.println("컷라인");
+		
+		int cutLine = sc.nextInt();
+		
+		mp.filterData(result, cutLine);
+		
 		sc.close();
 	}
 
