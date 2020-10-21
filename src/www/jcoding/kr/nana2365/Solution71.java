@@ -11,7 +11,13 @@ public class Solution71 {
 	
 	public int func_a(int num) {
 		int sum = 0;
-		// sum : 1 부터 num 까지의 합계 
+		int i = 0;
+		
+		// sum : 1 부터 num 까지의 합계
+		while(i<=num) {
+			sum = sum + i; 
+			i++;
+		}
 		return sum;
 	}
 	

@@ -6,6 +6,7 @@ public class Main1020 {
 
 	public static void main(String[] args) {
 
+		/*
 		//객체를 생성한다 : Solution01 이라는 클래스 내부에 들어있는 함수를 불러서 쓸 수 있도록 객체 생성
 		Solution01 s01 =  new Solution01();
 		
@@ -17,10 +18,21 @@ public class Main1020 {
 		
 		//결과값을 화면에 출력한다.
 		System.out.println(Arrays.toString(result));
+		*/
+		
+	
+		/*
+		Solution71 s71 =  new Solution71();
+		
+		int n = s71.getInput();
+		int m = s71.getInput();
+				
+		int result = s71.solution(n, m);
+		
+		System.out.println(result);
 		
 		
-		
-		
+		*/
 		
 		
 		
