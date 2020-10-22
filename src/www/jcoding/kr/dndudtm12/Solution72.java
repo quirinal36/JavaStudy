@@ -41,4 +41,18 @@ public class Solution72 {
 
 		return result;
 	}
+	public int[] solution2(int[] arr) {
+		int []result = new int[arr.length-2];
+		int max = getMax(arr);
+		int min = getMin(arr);
+		int i = 0;
+		// TODO: 가장 높은점수(max)와 가장 낮은점수(min)을 제외한 나머지 점수들의 합을 구하세요.
+		for(int n=0 ; n < arr.length; n++) {
+			if(arr[n] != max && arr[n] != min) {
+				result[i++] = arr[n];
+			}
+		}
+
+		return result;
+	}
 }
