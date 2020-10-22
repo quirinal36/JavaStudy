@@ -12,6 +12,9 @@ public class Solution71 {
 	public int func_a(int num) {
 		int sum = 0;
 		// sum : 1 부터 num 까지의 합계 
+		for (int i = 1 ; i <= num ; i++) {
+			sum = sum + i;
+		}
 		return sum;
 	}
 	
@@ -20,7 +23,7 @@ public class Solution71 {
 		System.out.print("please input number >>");
 		int input = sc.nextInt();
 		
-		sc.close();
+//		sc.close();
 		
 		return input;
 	}
