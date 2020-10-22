@@ -15,8 +15,8 @@ public class Main1027 {
 		
 		boolean confirm = false;
 		while(confirm == false) {
-			System.out.println("비밀번호:");
-			System.out.print("(8글자 이상의 영문자(1개이상의 대문자) 숫자, 특수문자를 조함하여 작성 해주세요.");
+			System.out.println("(8글자 이상의 영문자(1개이상의 대문자) 숫자, 특수문자를 조함하여 작성 해주세요.");
+			System.out.print("비밀번호:");
 			user.password = sc.next();
 			System.out.print("비밀번호 확인:");
 			user.password_confirm = sc.next();
