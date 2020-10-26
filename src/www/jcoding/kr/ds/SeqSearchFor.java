@@ -9,7 +9,22 @@ class SeqSearchFor {
 		
 		return -1;					// 검색 실패!(-1을 반환)
 	}
-
+	
+	/**
+	 * 연습문제 Q3
+	 * 
+	 * @param a
+	 * @param n
+	 * @param key
+	 * @param idx
+	 * @return
+	 */
+	static int searchIdx(int[]a, int n, int key, int[] idx) {
+		// TODO: Q3 연습문제를 구현 합니다.
+		int count = 0;
+		
+		return count;
+	}
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 

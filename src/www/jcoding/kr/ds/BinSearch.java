@@ -22,6 +22,22 @@ class BinSearch {
 
 		return -1;						// 검색 실패!
 	}
+	/**
+	 * 연습문제 Q5
+	 * 
+	 * @param a
+	 * @param n
+	 * @param key
+	 * @return
+	 */
+	static int binSearchX(int[] a, int n, int key) {
+		int index = 0;
+		// TODO: 연습문제 Q5 구현부
+		// 1. binSearch 메소드를 활용해 찾는 값이 몇 번째에 있는지 구하여 index 변수에 저장한다.
+		// 2. 배열 a에서  index 앞번호의 값이 key와 같은지 확인하고, 같다면 index 값을 -1만큼 수정한다.
+		// 2-1. 2번 단계를 a[index]와 key값이 서로 같지 않을 때까지 반복한다.
+		return index;
+	}
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 
