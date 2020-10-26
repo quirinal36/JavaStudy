@@ -1,7 +1,6 @@
 package www.jcoding.kr.ds;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 // 이진 검색 
@@ -22,10 +21,6 @@ class BinSearch {
 		} 
 
 		return -1;						// 검색 실패!
-	}
-	public static int getRandomNum(int bound) {
-		Random random = new Random();
-		return random.nextInt(bound)+1;
 	}
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
