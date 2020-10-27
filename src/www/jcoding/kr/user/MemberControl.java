@@ -40,7 +40,7 @@ public class MemberControl {
 	 * @return 모든 조건에 맞다면 true, 그렇지 않다면 false
 	 */
 	public boolean isValid(String pwd) {
-		boolean result = false;
+		boolean result = true;
 		
 		return result;
 	}

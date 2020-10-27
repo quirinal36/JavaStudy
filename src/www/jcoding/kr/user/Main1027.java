@@ -14,15 +14,21 @@ public class Main1027 {
 		user.login = sc.next();
 		
 		boolean confirm = false;
-		while(confirm == false) {
+		boolean isValid = false;
+		
+		while(confirm == false || isValid == false) {
 			System.out.println("(8글자 이상의 영문자(1개이상의 대문자) 숫자, 특수문자를 조함하여 작성 해주세요.");
 			System.out.print("비밀번호:");
 			user.password = sc.next();
 			System.out.print("비밀번호 확인:");
 			user.password_confirm = sc.next();
 			confirm = control.confirmPassword(user.password, user.password_confirm);
+			isValid = control.isValid(user.password);
+			
 			if(confirm == false) {
 				System.out.println("입력된 비밀번호가 일치하지 않습니다. 다시 입력 해주세요.");
+			}else if(isValid == false) {
+				System.out.println("다시 입력 해주세요.");
 			}
 		}
 		System.out.print("이름:");
