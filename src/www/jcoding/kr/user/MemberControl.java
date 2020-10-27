@@ -54,7 +54,7 @@ public class MemberControl {
 	public boolean confirmPassword(String input1, String input2) {
 		boolean result = true;
 		// input1 과 input2가 서로 같은지 검사한다.
-		// result = input1.equals(input2);
+		result = input1.equals(input2);
 		return result;
 	}
 	

@@ -6,7 +6,11 @@ import java.util.Scanner;
 class SeqSearchFor {
 	// 배열 a의 앞쪽 n개의 요소에서 key와 같은 요소를 선형 검색 
 	static int seqSearch(int[] a, int n, int key) {
-		
+		for (int i = 0 ; i < n; i++) {
+			if (key == a[i]) {
+				return i;
+			}
+		}
 		return -1;					// 검색 실패!(-1을 반환)
 	}
 	
