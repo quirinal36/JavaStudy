@@ -41,7 +41,38 @@ public class MemberControl {
 	 */
 	public boolean isValid(String pwd) {
 		boolean result = true;
+		int Small = 0;
+		int Big = 0;
+		int n = 0;
+		int s = 0;
+		int r = 0;
+		char pwd2[] = new char[pwd.length()];
 		
+		for (int i = 0 ; i < pwd.length() ; i++) {
+			pwd2[i] = pwd.charAt(i);
+		}
+		
+		for (int i = 0 ; i < pwd.length() ; i++) {
+			if (pwd2[i] >= LOWERCASE[i] && pwd2[i] <= LOWERCASE[LOWERCASE.length - 1]) {
+				Small += 1;
+			} else if (pwd2[i] >= UPPERCASE[i] && pwd2[i] <= UPPERCASE[UPPERCASE.length - 1]) {
+				Big += 1;
+			} else if (pwd2[i] >= NUMS[i] && pwd2[i] <= NUMS[NUMS.length - 1]) {
+				n += 1;
+			} else if (pwd2[i] >= SIGNS[i] && pwd2[i] <= SIGNS[SIGNS.length - 1]) {
+				s += 1;	
+			} else {
+				r = 1;
+				break;
+			}
+		}
+		System.out.println("small = " + Small);
+		System.out.println("big = " + Big);
+		System.out.println("숫자 = " + n);
+		System.out.println("특수 = " + s);
+		if (r == 1 || Big < 1 || Small < 1 || n < 1 || s < 1 || (Big + Small + n + s) < 8) {
+			result = false;
+		}
 		return result;
 	}
 	/**

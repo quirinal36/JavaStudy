@@ -28,7 +28,7 @@ public class Main1027 {
 			if(confirm == false) {
 				System.out.println("입력된 비밀번호가 일치하지 않습니다. 다시 입력 해주세요.");
 			}else if(isValid == false) {
-				System.out.println("다시 입력 해주세요.");
+				System.out.println("사용할수 없는 비밀번호입니다.");
 			}
 		}
 		System.out.print("이름:");
