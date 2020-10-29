@@ -46,40 +46,48 @@ public class MemberControl {
 		int n = 0;
 		int s = 0;
 		int r = 0;
-		char pwd2[] = new char[pwd.length()];
 		
 		for (int i = 0 ; i < pwd.length() ; i++) {
-			pwd2[i] = pwd.charAt(i);
-		}
-		
-		for (int i = 0 ; i < pwd.length() ; i++) {
-			for(char l : LOWERCASE) {
+			for(int j=0; j < LOWERCASE.length; j++) {
+				char l = LOWERCASE[j];
 				if(pwd.charAt(i) == l) {
 					Small++;
 				}
 			}
-			
-			
-			/*
-			if (pwd2[i] >= LOWERCASE[i] && pwd2[i] <= LOWERCASE[LOWERCASE.length - 1]) {
-				Small += 1;
-			} else if (pwd2[i] >= UPPERCASE[i] && pwd2[i] <= UPPERCASE[UPPERCASE.length - 1]) {
-				Big += 1;
-			} else if (pwd2[i] >= NUMS[i] && pwd2[i] <= NUMS[NUMS.length - 1]) {
-				n += 1;
-			} else if (pwd2[i] >= SIGNS[i] && pwd2[i] <= SIGNS[SIGNS.length - 1]) {
-				s += 1;	
-			} else {
-				r = 1;
-				break;
-			}
-			*/
 		}
+		
+		for (int i = 0 ; i < pwd.length() ; i++) {
+			for(int j=0; j < UPPERCASE.length; j++) {
+				char l = UPPERCASE[j];
+				if(pwd.charAt(i) == l) {
+					Big++;
+				}
+			}
+		}
+		
+		for (int i = 0 ; i < pwd.length() ; i++) {
+			for(int j=0; j < NUMS.length; j++) {
+				char l = NUMS[j];
+				if(pwd.charAt(i) == l) {
+					n++;
+				}
+			}
+		}
+		
+		for (int i = 0 ; i < pwd.length() ; i++) {
+			for(int j=0; j < SIGNS.length; j++) {
+				char l = SIGNS[j];
+				if(pwd.charAt(i) == l) {
+					s++;
+				}
+			}
+		}
+		
 		System.out.println("small = " + Small);
 		System.out.println("big = " + Big);
 		System.out.println("숫자 = " + n);
 		System.out.println("특수 = " + s);
-		if (r == 1 || Big < 1 || Small < 1 || n < 1 || s < 1 || (Big + Small + n + s) < 8) {
+		if (Big < 1 || Small < 1 || n < 1 || s < 1 || (Big + Small + n + s) < 8) {
 			result = false;
 		}
 		return result;
