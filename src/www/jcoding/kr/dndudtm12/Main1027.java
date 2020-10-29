@@ -1,4 +1,4 @@
-package www.jcoding.kr.user;
+package www.jcoding.kr.dndudtm12;
 
 import java.util.Scanner;
 

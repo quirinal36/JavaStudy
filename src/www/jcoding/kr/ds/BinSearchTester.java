@@ -40,10 +40,13 @@ class BinSearchTester {
 		System.out.print("검색할 값：");		// 키값을 입력
 		int ky = stdIn.nextInt();
 
+		long curTime01 = System.currentTimeMillis();
+		System.out.println("curTime02: " + curTime01);
 		long start = System.nanoTime();
 		int idx = binSearch(x, num, ky);	// 배열x에서 값이 ky인 요소를 검색
 		long end = System.nanoTime();
-		
+		long curTime02 = System.currentTimeMillis();
+		System.out.println("curTime02: " + curTime02);
 		if (idx == -1)
 			System.out.println("그 값의 요소가 없습니다.");
 		else
