@@ -1,4 +1,4 @@
-package www.jcoding.kr.ds;
+package www.jcoding.kr.ds.stack;
 // int형 스택
 
 public class IntStack {

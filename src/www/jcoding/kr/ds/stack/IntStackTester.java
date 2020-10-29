@@ -1,4 +1,4 @@
-package www.jcoding.kr.ds;
+package www.jcoding.kr.ds.stack;
 
 import java.util.Scanner;
 // int형 스택의 사용 예
