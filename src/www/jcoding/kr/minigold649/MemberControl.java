@@ -53,6 +53,14 @@ public class MemberControl {
 		}
 		
 		for (int i = 0 ; i < pwd.length() ; i++) {
+			for(char l : LOWERCASE) {
+				if(pwd.charAt(i) == l) {
+					Small++;
+				}
+			}
+			
+			
+			/*
 			if (pwd2[i] >= LOWERCASE[i] && pwd2[i] <= LOWERCASE[LOWERCASE.length - 1]) {
 				Small += 1;
 			} else if (pwd2[i] >= UPPERCASE[i] && pwd2[i] <= UPPERCASE[UPPERCASE.length - 1]) {
@@ -65,6 +73,7 @@ public class MemberControl {
 				r = 1;
 				break;
 			}
+			*/
 		}
 		System.out.println("small = " + Small);
 		System.out.println("big = " + Big);
